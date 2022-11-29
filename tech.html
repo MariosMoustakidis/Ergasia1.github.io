@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tech4U</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navigation">
+      <div><a href="index.html"><b>Tech4u &copy;</b></a>
+
+        <div align="right">
+          <strong>
+            <a href="index.html"> Αρχική Σελίδα</a> &nbsp;
+            <a href="product-categories.html">Κατηγορίες προϊόντων</a>&nbsp;
+            <a href="about-us.html">Ποιοι είμαστε</a>&nbsp;
+            <a href="tech.html">Τεχνική υποστήριξη</a>
+            </strong>
+        </div>
+        
+        <br />
+
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Τεχνική Υποστήριξη</h2>
+    <img src="images/tech_support.jpg" width="1850" height="700" alt="tech support">
+    <article>
+      
+      <h3>Για ό,τι χρειαστείς είμαστε εδώ για σένα!</h3>
+      <p>Αν αντιμετωπίζεις κάποιο τεχνικό ζήτημα με κάποιο προϊον παρακαλούμε συμπλήρωσε την παρακάτω φόρμα
+        επικοινωνιίας!</p>
+    </article>
+
+
+
+    <form action="/sendData" method="GET">
+      <fieldset>
+        <legend>
+          Φόρμα Επικοινωνίας:
+        </legend>
+        <label for="txtName">Ονοματεπώνυμο:</label>
+        <input type="text" id="txtName" name="name" minlength="3" maxlength="40" size="40" required>
+        *
+        <br>
+        <label for="txtEmail">E-mail: </label>
+        <input type="email" id="txtEmail" name="email" size="40">
+        *
+        <br>
+        <label for="txtTel">Τηλέφωνο: </label>
+        <input type="tel" id="txtTel" name="phone" size="15" required>
+        *
+        <br>
+        <label for="txtCode">Κωδικός προϊόντος: </label>
+        <input type="text" id="txtCode" name="code" size="15" required>
+        *
+        <br>
+        <label for="txtProof">Φωτογραφία απόδειξης: </label>
+        <input type="file" id="txtProof" name="proof" accept="image/png, image/jpeg" required>
+        *
+        <br>
+        <label for="txtDate">Ημερομηνία αγοράς:</label>
+        <input type="date" id="txtDate" name="date" min="2021-01-01" value="2021-12-21" required>
+        *
+        <br>
+        <label for="txtMessage">Σχόλια:</label>
+        <br>
+        <textarea id="txtMessage" name="message" rows="6" cols="40"></textarea>
+        <br>
+        * Τα πεδία είναι υποχρεωτικά
+      </fieldset>
+      <input type="submit" value="Αποστολή">
+      <input type="reset" value="Καθαρισμός">
+    </form>
+
+  </main>
+  <footer>
+    <p>&copy; Tech4U</p>
+    <a href="abouts-us.html">About us</a>
+  </footer>
+</body>
+
+</html>
